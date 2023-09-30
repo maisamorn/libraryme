@@ -1,0 +1,443 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+}
+
+nav {
+      background-color: rgba(20, 20, 99, 0.849);
+      width: 100%;
+      height: 60px;
+      box-shadow: 0 0 10px #000;
+}
+
+header {
+      width: 80%;
+      height: 60px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+}
+
+.logo {
+      flex: 0.4;
+      color: white;
+      font-size: 25px;
+      text-decoration: none;
+      list-style: none;
+}
+
+#menu {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      flex: 1;
+}
+
+#menu li {
+      margin-right: 33px;
+      font-weight: bold;
+      font-size: 18px;
+}
+
+#menu li a {
+      text-decoration: none;
+      color: white;
+      padding: 12px;
+      border-radius: 6px;
+}
+
+#menu li a:hover {
+      background-color: #074783;
+      transform: 0.3s;
+}
+
+#menu li ul {
+      background-color: #074783;
+      width: 23%;
+      height: 22%;
+      display: none;
+      position: absolute;
+      margin-top: 11px;
+      padding: 10px;
+      border-radius: 6px;
+}
+
+#menu li ul li {
+      margin-top: 15px;
+      list-style: none;
+}
+
+#menu li ul li a:hover {
+      background-color: #376b9b;
+}
+
+#dropdown:hover ul {
+      display: block;
+}
+
+.search-box {
+      flex: 0.7;
+      position: relative;
+}
+
+.search-box input {
+      background-color: #dfd7d7;
+      width: 100%;
+      height: 36px;
+      border: none;
+      outline: none;
+      border-radius: 9px;
+      color: gray;
+      font-size: 18px;
+      padding-left: 10%;
+}
+
+button {
+      background-color: #dfd7d7;
+      width: 45px;
+      height: 36px;
+      cursor: pointer;
+      border-radius: 9px;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: scale(0.9);
+}
+
+.list {
+      display: inline;
+      color: azure;
+}
+
+.list li {
+      display: inline-block;
+}
+
+ul li:hover ul {
+      display: block;
+}
+
+.list li ul {
+      background-color: #074783;
+      width: 200px;
+      position: absolute;
+      display: none;
+}
+
+.list li ul li {
+      display: block;
+      padding: 10px;
+}
+
+.list li ul li a {
+      display: block !important;
+      color: azure;
+      text-decoration: none;
+}
+
+.list li ul li:hover {
+      background-color: #376b9b;
+      border-radius: 9px;
+}
+
+/* card-------------------------- */
+.book-page {
+      width: 80%;
+      margin: auto;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+}
+
+.tittle {
+      font-size: 26px;
+      font-weight: bold;
+      padding: 0 0 15px 0;
+}
+
+.tittle-book {
+      font-size: 20px;
+}
+
+.contain-card {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px 15px;
+}
+
+.card {
+      width: 100%;
+      height: 444px;
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+      gap: 3px;
+}
+
+.gp-pic {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+img {
+      width: 100%;
+      height: 330px;
+}
+
+.pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+}
+
+.pagination a {
+      color: black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 1px solid rgb(138, 132, 132);
+}
+
+.pagination a.active {
+      background-color: rgba(20, 20, 99, 0.849);
+      color: white;
+      border: 1px solid rgba(20, 20, 99, 0.849);
+}
+
+.pagination a:hover:not(.active) {
+      background-color: rgba(20, 20, 99, 0.849);
+      color: white;
+}
+
+/* footer---------------------------------------------- */
+footer {
+      background-color: rgba(79, 79, 79, 1);
+      height: 47vh;
+      padding-top: 21px;
+}
+
+.footer {
+      margin: 0 10%;
+      display: flex;
+      flex-direction: column;
+      color: rgb(212, 202, 202);
+}
+
+.footer-top {
+      height: 35vh;
+      display: flex;
+      justify-content: space-between;
+}
+
+ul li {
+      list-style: none;
+}
+
+.footer a {
+      text-decoration: none;
+      color: rgb(212, 202, 202);
+}
+
+.footer a:hover {
+      color: blueviolet;
+}
+
+.cu-group {
+      display: grid;
+      gap: 10px;
+}
+
+.cu-item a {
+      display: flex;
+      gap: 15px;
+}
+
+.footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+}
+
+.footer-bottom a img {
+      width: 45px;
+      height: 3%;
+}
+
+#whatup {
+      width: 35px;
+      height: 2%;
+}
+
+/* responsive-------------------------------------------------- */
+@media(max-width:1400px) {
+      .list {
+            display: none;
+      }
+
+}
+
+@media(max-width:900px) {
+      .list {
+            display: none;
+      }
+
+      .tittle {
+            font-size: 23px;
+            font-weight: bold;
+      }
+
+      .tittle-book {
+            font-size: 18px;
+      }
+
+      p {
+            font-size: 14px;
+      }
+
+      .contain-card {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px 15px;
+      }
+
+      .card {
+            width: 85%;
+
+            height: 430px;
+      }
+
+      img {
+            height: 280px;
+      }
+
+      footer {
+            height: 42vh;
+      }
+
+      .footer-top {
+            height: 29vh;
+      }
+}
+
+@media (max-width:600px) {
+      header {
+            width: 100%;
+            padding:0 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+      }
+
+      .list {
+            display: inline-block;
+      }
+
+      .list li ul {
+            width: 48%;
+            height: 39%;
+            border-radius: 9px;
+      }
+
+      .logo h3 {
+            display: none;
+      }
+
+      #menu {
+            display: none;
+      }
+      .search-box{
+            flex: 0.5;
+      }
+
+      .book-page {
+            width: 100%;
+      }
+
+      .tittle {
+            font-size: 19px;
+            font-weight: bold;
+            margin-left: 30px;
+      }
+
+      .describe-book {
+            margin-left: 10px;
+      }
+
+      .tittle-book {
+            font-size: 15px;
+      }
+
+      p {
+            font-size: 12px;
+      }
+
+      .contain-card {
+            grid-template-columns: 1fr;
+            gap: 2px 15px;
+      }
+
+      .card {
+            height: 183px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 30px;
+      }
+
+      img {
+            width: 120px;
+            height: 180px;
+      }
+
+      .pagination {
+            margin-top: 15px;
+      }
+
+      footer {
+            height: 93vh;
+      }
+
+      .footer {
+            padding-left: 10px;
+            margin: 0;
+      }
+
+      .footer-top {
+            height: 75vh;
+            flex-direction: column;
+      }
+
+      .footer-right {
+            display: flex;
+            gap: 10px;
+      }
+      .footer-bottom {
+            height: 14vh;
+      }
+
+      .cu-group {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+      }
+
+      .cu-item a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .footer-bottom a img {
+            width: 35px;
+      }
+
+      #whatup {
+            width: 25px;
+      }
+}
